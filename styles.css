@@ -44,5 +44,54 @@ button,
 input {
     width: 100%;
     border: none;
-    font-size: 24px;
+    font-family: inherit;
+    font-weight: 300;
+    outline: none;
+    cursor: pointer;
+}
+
+button,
+input[type= 'color'] {
+    transition: transform 0.1s ease-in-out;
+}
+
+button:hover,
+input[type='color']:hover {
+  transform: scale(1.05);
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+button.active {
+    background-color: #333;
+    color: #ededed;
+}
+
+input[type='color']:active {
+    transition: transform 0.05s ease-in-out;
+    transform: scale(1);
+}
+
+input[type='color'] {
+    appearance: none;
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
