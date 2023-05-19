@@ -16,4 +16,14 @@ body {
     margin-top: 37px;
     font-size: 80px;
     font-weight: bolder;
+    margin-bottom: 29px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
