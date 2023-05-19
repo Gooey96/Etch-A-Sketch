@@ -7,10 +7,8 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">Etch A Sketch</h1>
-    </header>
-    <main class="container">
+    <div class="header">Etch A Sketch</div>
+    <div class="container">
         <div class="settings">
             <input id="colorPicker" type="color" value="#333333">
             <button id="colorBtn">Color mode</button>
@@ -21,14 +19,14 @@
             <input id="sizeSlider" type="range" value="16" min="1" max="64"/>
         </div>
         <div id="grid" class="grid"></div>
-    </main>
-    <footer>
-        <p>Copyright © 
+    </div>
+    <div class="footer">
+        <div>Copyright © 
             <script>
             document.write(new Date().getFullYear())
             </script>
           Gooey96
-        </p>
-    </footer>
+        </div>
+    </div>
 </body>
 </html>
