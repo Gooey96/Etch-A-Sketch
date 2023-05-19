@@ -18,6 +18,7 @@ body {
     font-size: 80px;
     font-weight: bolder;
     margin-bottom: 29px;
+    color: #333;
 }
 
 .container {
@@ -27,7 +28,6 @@ body {
     gap: 100px;
     max-width: 1100px;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 .settings {
@@ -37,6 +37,7 @@ body {
     justify-content: center;
     gap: 30px;
     width: 200px;
+    align-self: flex-start;
 }
 
 button,
@@ -119,4 +120,12 @@ input[type='range']::-webkit-slider-thumb {
     border-radius: 25px;
     margin-top: -8px;
     background-color: #333;
+}
+
+.grid {
+    display: flex;
+    width: 960px;
+    height: 960px;
+    background-color: #fefefe;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
