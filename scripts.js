@@ -1,6 +1,6 @@
 const colorPicker = document.querySelector('#colorPicker');
 const colorBtn = document.querySelector('#colorBtn');
-const rainbowBtn = document.querySelector('#rainbowBtn');
+const randomBtn = document.querySelector('#randomcolor');
 const eraserBtn = document.querySelector('#eraserBtn');
 const clearBtn = document.querySelector('#clearBtn');
 const sizeValue = document.querySelector('#sizeValue');
