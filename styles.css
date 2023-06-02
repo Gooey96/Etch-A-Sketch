@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --font_color: #090a20;
+  --backgroung_color: #e3e4f7;
+  --grid_backgroundcolor:  #fefefe;
+  --primary_button: #e5e1a4;
+  --secondary_button: #cfd2f2;
+  --accent: #cfc754;
+}
+
+@font-face {
+  font-family: pacifico;
+  src: url(pacifico_font/Pacifico-Regular.ttf);
+}
+
+.header {
+  color: var(--font_color);
+  border: 1px solid black; /*For debugging*/
+  text-align: center;
+  font-size: 60px;
+  padding: 30px 0px;
+  font-family: pacifico;
+}
