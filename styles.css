@@ -25,6 +25,11 @@ body {
   src: url(pacifico_font/Pacifico-Regular.ttf);
 }
 
+@font-face {
+  font-family: Monomaniac;
+  src: url(MonomaniacOne-Regular/MonomaniacOne-Regular.ttf);
+}
+
 .header {
   color: var(--primary_color);
   border: 1px solid black; /*For debugging*/
@@ -33,6 +38,13 @@ body {
   padding: 30px 0px;
   font-family: pacifico;
   text-shadow: 5px 5px var(--accent);
+}
+
+.para{
+  color: var(--accent);
+  text-shadow: none;
+  font-size: 48px;
+  font-family: Monomaniac;
 }
 
 .main{
