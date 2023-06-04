@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --font_color: #090a20;
+  --primary_color: #090a20;
   --backgroung_color: #e3e4f7;
   --grid_backgroundcolor:  #fefefe;
   --primary_button: #e5e1a4;
@@ -26,7 +26,7 @@ body {
 }
 
 .header {
-  color: var(--font_color);
+  color: var(--primary_color);
   border: 1px solid black; /*For debugging*/
   text-align: center;
   font-size: 60px;
@@ -47,9 +47,10 @@ body {
   height: 750px;
   border: solid 2px var(--accent);
   border-radius: 7px;
+  background-color: var(--grid_backgroundcolor);
 }
 
 .grid {
-  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  border: 0.5px solid var(--primary_color);
   border-radius: 4.5px;
 }
