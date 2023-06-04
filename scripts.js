@@ -18,3 +18,10 @@ function applyGrid(grid) {
 }
 
 applyGrid(gridSize);
+
+container.addEventListener('mouseover', function (e) {
+  if (e.target.matches('.grid')) {
+    e.target.classList.add('active');
+  }
+});
+
