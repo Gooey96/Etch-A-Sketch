@@ -66,10 +66,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
   padding: 0px 20px 0px 20px;
   width: 170px;
-  height: 220px;
+  height: 250px;
   background-color: var(--accent);
   border: 2px solid var(--accent);
   border-top-left-radius: 7px;
@@ -80,13 +79,26 @@ body {
   text-align: center;
   font-size: 24px;
   font-family: monomaniac;
-  margin-top: -40px;
+  margin-top: -20px;
 }
 
 .gridSize {
   text-align: center;
   font-size: 20px;
   font-family: monomaniac;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  padding: 3px 24px;
+  font-size: 18px;
+  font-family: monomaniac;
+  border-radius: 4px;
+}
+
+.btnGrd,
+.eraser {
+  margin-bottom: 20px;
 }
 
 .grid {
