@@ -79,6 +79,7 @@ body {
   text-align: center;
   font-size: 24px;
   font-family: monomaniac;
+  color: var(--primary_color);
   margin-top: -20px;
 }
 
@@ -86,6 +87,7 @@ body {
   text-align: center;
   font-size: 20px;
   font-family: monomaniac;
+  color: var(--primary_color);
   margin-bottom: 10px;
 }
 
