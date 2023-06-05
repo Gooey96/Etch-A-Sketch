@@ -32,7 +32,6 @@ body {
 
 .header {
   color: var(--primary_color);
-  border: 1px solid black; /*For debugging*/
   text-align: center;
   font-size: 60px;
   padding: 30px 0px;
