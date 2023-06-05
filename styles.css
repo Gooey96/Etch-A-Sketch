@@ -77,6 +77,12 @@ body {
   border-bottom-left-radius: 7px;
 }
 
+.ctrl {
+  text-align: center;
+  font-size: 24px;
+  font-family: monomaniac;
+}
+
 .grid {
   border: 0.5px solid var(--primary_color);
   border-radius: 4.5px;
