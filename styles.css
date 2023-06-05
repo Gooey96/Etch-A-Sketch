@@ -82,6 +82,12 @@ body {
   font-family: monomaniac;
 }
 
+.gridSize {
+  text-align: center;
+  font-size: 20px;
+  font-family: monomaniac;
+}
+
 .grid {
   border: 0.5px solid var(--primary_color);
   border-radius: 4.5px;
@@ -96,4 +102,5 @@ body {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 26px;
+  font-family: pacifico;
 }
