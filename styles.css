@@ -100,8 +100,35 @@ body {
   margin-bottom: 10px;
 }
 
-.input {
-  margin-top: 20px;
+.input[type='color'] {
+  align-self: center;
+  margin-top: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.input[type='color']:hover {
+  transform: scale(1.05);
+}
+
+.input[type='color']:active {
+  transition: transform 0.05s ease-in-out;
+  transform: scale(1);
+}
+
+.input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0px;
+}
+
+.input[type='color']::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
 }
 
 .buttons {
@@ -109,6 +136,7 @@ body {
   font-size: 18px;
   font-family: monomaniac;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .btnGrd,
