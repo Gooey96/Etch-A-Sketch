@@ -1,4 +1,5 @@
 const container = document.querySelector('.container');
+const gridBtn = document.querySelector('.btnGrd');
 let gridSize = 16;
 
 function creatGrid(size) {
@@ -17,7 +18,7 @@ function applyGrid(grid) {
   }
 }
 
-applyGrid(gridSize);
+window.onload = () => applyGrid(gridSize);
 
 container.addEventListener('mouseover', function (e) {
   if (e.target.matches('.grid')) {
@@ -25,3 +26,19 @@ container.addEventListener('mouseover', function (e) {
   }
 });
 
+function reset() {
+  container.innerHTML = '';
+}
+
+gridBtn.addEventListener('click', function () {
+  const getGridSize = prompt('Number of Grids','16');
+  +getGridSize;
+  if((getGridSize !== gridSize) && (getGridSize > 0)) {
+    reset();
+    applyGrid(getGridSize);
+  }
+  else if(getGridSize === gridSize) {
+    reset();
+    applyGrid(gridSize);
+  };
+}); 
