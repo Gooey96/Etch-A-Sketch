@@ -143,6 +143,10 @@ body {
   cursor: pointer;
 }
 
+.buttons:hover {
+  background-color: var(--secondary_button);
+}
+
 .btnGrd,
 .eraser,
 .colors,
