@@ -1,6 +1,7 @@
 const container = document.querySelector('.container');
 const gridBtn = document.querySelector('.btnGrd');
 const textGridSize = document.querySelector('.gridSize');
+const resetBtn = document.querySelector('.reset');
 let gridSize = 16;
 
 function creatGrid(size) {
@@ -43,4 +44,10 @@ gridBtn.addEventListener('click', function () {
     reset();
     applyGrid(gridSize);
   };
-}); 
+});
+
+resetBtn.addEventListener('click', () => {
+  reset();
+  applyGrid(gridSize);
+  textGridSize.textContent = `${gridSize} x ${gridSize}`;
+})
