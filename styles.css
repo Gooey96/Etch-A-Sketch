@@ -71,11 +71,20 @@ body {
   height: 250px;
   background-color: var(--accent);
   border: 2px solid var(--accent);
+}
+
+.A {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
 
-.ctrl {
+.B {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.ctrl,
+.md {
   text-align: center;
   font-size: 24px;
   font-family: monomaniac;
@@ -91,6 +100,10 @@ body {
   margin-bottom: 10px;
 }
 
+.input {
+  margin-top: 20px;
+}
+
 .buttons {
   padding: 3px 24px;
   font-size: 18px;
@@ -99,7 +112,10 @@ body {
 }
 
 .btnGrd,
-.eraser {
+.eraser,
+.colors,
+.rainbow,
+.input {
   margin-bottom: 20px;
 }
 
