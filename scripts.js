@@ -3,6 +3,7 @@ const gridBtn = document.querySelector('.btnGrd');
 const textGridSize = document.querySelector('.gridSize');
 const resetBtn = document.querySelector('.reset');
 const eraserBtn = document.querySelector('.eraser');
+const input = document.querySelector('.input');
 let gridSize = 16;
 
 function creatGrid(size) {
@@ -23,11 +24,11 @@ function applyGrid(grid) {
 
 window.onload = () => applyGrid(gridSize);
 
-container.addEventListener('mouseover', function (e) {
+/*container.addEventListener('mouseover', function (e) {
   if (e.target.matches('.grid')) {
     e.target.classList.add('active');
-  }
-});
+  }          Comment this out for reference
+});*/
 
 function reset() {
   container.innerHTML = '';
@@ -57,6 +58,26 @@ eraserBtn.addEventListener('click', function() {
   container.addEventListener('mouseover', function(e) {
     if (e.target.matches('.grid')) {
       e.target.style.backgroundColor = '#fefefe';
+    }
+  });
+});
+
+input.addEventListener('input', function(e) {
+  console.log(e.target.value);
+  let color = e.target.value;
+  container.addEventListener('mouseover', function(event) {
+    if (event.target.matches('.grid')) {
+      event.target.style.backgroundColor = `${color}`;
+    }
+  });
+});
+
+input.addEventListener('click', function(e) {
+  console.log(e.target.value);
+  let color = e.target.value;
+  container.addEventListener('mouseover', function(event) {
+    if (event.target.matches('.grid')) {
+      event.target.style.backgroundColor = `${color}`;
     }
   });
 });
