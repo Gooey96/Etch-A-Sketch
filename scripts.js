@@ -24,12 +24,6 @@ function applyGrid(grid) {
 
 window.onload = () => applyGrid(gridSize);
 
-/*container.addEventListener('mouseover', function (e) {
-  if (e.target.matches('.grid')) {
-    e.target.classList.add('active');
-  }          Comment this out for reference
-});*/
-
 function reset() {
   container.innerHTML = '';
 }
@@ -52,6 +46,7 @@ resetBtn.addEventListener('click', () => {
   reset();
   applyGrid(gridSize);
   textGridSize.textContent = `${gridSize} x ${gridSize}`;
+  input.value = '#090a20';
 })
 
 eraserBtn.addEventListener('click', function() {
