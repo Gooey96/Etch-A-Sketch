@@ -5,6 +5,7 @@ const resetBtn = document.querySelector('.reset');
 const eraserBtn = document.querySelector('.eraser');
 const input = document.querySelector('.input');
 const colorBtn = document.querySelector('.colorBtn');
+const rainbowBtn = document.querySelector('.rainbow');
 let gridSize = 16;
 
 function creatGrid(size) {
@@ -30,9 +31,9 @@ function reset() {
 }
 
 gridBtn.addEventListener('click', function () {
-  const getGridSize = prompt('Number of Grids','16');
+  const getGridSize = prompt('How many grid do you need, Limit 64','16');
   +getGridSize;
-  if((getGridSize !== gridSize) && (getGridSize > 0)) {
+  if((getGridSize !== gridSize) && (getGridSize > 0 && getGridSize < 65)) {
     reset();
     applyGrid(getGridSize);
     textGridSize.textContent = `${getGridSize} x ${getGridSize}`;
@@ -40,7 +41,10 @@ gridBtn.addEventListener('click', function () {
   else if(getGridSize === gridSize) {
     reset();
     applyGrid(gridSize);
-  };
+  }
+  else {
+    alert('The number you have input is over the limit')
+  }
 });
 
 resetBtn.addEventListener('click', () => {
@@ -83,6 +87,14 @@ colorBtn.addEventListener('click', function() {
   container.addEventListener('mouseover', function(event) {
     if (event.target.matches('.grid')) {
       event.target.style.backgroundColor = `${colors}`;
+    }
+  });
+})
+
+rainbowBtn.addEventListener('click', function() {
+  container.addEventListener('mouseover', function(event) {
+    if (event.target.matches('.grid')) {
+      event.target.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
     }
   });
 })
