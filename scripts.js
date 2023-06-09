@@ -4,6 +4,7 @@ const textGridSize = document.querySelector('.gridSize');
 const resetBtn = document.querySelector('.reset');
 const eraserBtn = document.querySelector('.eraser');
 const input = document.querySelector('.input');
+const colorBtn = document.querySelector('.colorBtn');
 let gridSize = 16;
 
 function creatGrid(size) {
@@ -76,3 +77,12 @@ input.addEventListener('click', function(e) {
     }
   });
 });
+
+colorBtn.addEventListener('click', function() {
+  let colors = input.value;
+  container.addEventListener('mouseover', function(event) {
+    if (event.target.matches('.grid')) {
+      event.target.style.backgroundColor = `${colors}`;
+    }
+  });
+})
